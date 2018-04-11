@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-const fs = require('fs')
 const {sha3} = require('ethereumjs-util')
-const crypto = require('crypto')
 
 for (let i = 0; i < 255; i++) {
 	var keccak256hash = sha3(i).toString('hex')
